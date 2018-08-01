@@ -54,7 +54,6 @@ function total() {
 }
 
 function removeFromCart(item) {
-  // write your code here
   var found = false;
   var i = 1;
   while(found === false && i < cart.length){
