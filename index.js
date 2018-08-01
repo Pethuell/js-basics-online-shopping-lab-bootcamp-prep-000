@@ -33,7 +33,7 @@ function viewCart() {
       }
     resultantSentence = resultantSentence + `, and ` + cart[cart.length-1]['itemName'] + ` at $` + cart[cart.length-1]['itemPrice'] + `.`;
     
-    return resultantSentence + ".";
+    return resultantSentence;
   
     
   } else if(cart.length===1){
