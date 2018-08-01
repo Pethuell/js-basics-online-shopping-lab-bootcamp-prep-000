@@ -54,10 +54,8 @@ function total() {
 }
 
 function removeFromCart(item) {
-  //toggle when found
-  var found = false;
   var i = 0;
-  while(found === false && i < cart.length){
+  while(i < cart.length){
     if(cart[i].itemName === item){
         cart.splice(i+1,1);
         found = true;
@@ -66,7 +64,6 @@ function removeFromCart(item) {
         i++;
     }
   }
-  if(found === false){
       return 'That item is not in your cart.';
   
 }
