@@ -57,7 +57,7 @@ function removeFromCart(item) {
   // write your code here
   var found = false;
   var i = 0;
-  while(found === false && i < cart.length){
+  while(found === false && i < cart.length -1){
     if(cart[i].itemName === item){
         cart.splice(i-1,i+1);
         found = true;
