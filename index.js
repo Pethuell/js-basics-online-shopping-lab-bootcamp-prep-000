@@ -57,7 +57,7 @@ function removeFromCart(item) {
   var found = false;
   var i = 1;
   while(found === false && i < cart.length){
-    if(cart[i-1].itemName === item){
+    if(cart[i].itemName === item){
         cart.slice(i-1,i);
         found = true;
         return cart;
